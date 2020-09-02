@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counter++;
-                hasil.setText(""+counter);
-                if(counter>=30){
+                if(counter<=30){
                     hasil.setText(""+counter);
-                    Toast.makeText(getApplicationContext(),"sudah maksimal30", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(getApplicationContext(),"sudah maksimal 30", Toast.LENGTH_LONG).show();
                 }
             }
         });
